@@ -1,8 +1,9 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = "REPLACE_ME"
-    storage_account_name = "REPLACE_ME"
+    resource_group_name  = "rg-terraform-state"
+    storage_account_name = "sttfstatecj01"
     container_name       = "tfstate"
-    key                  = "platform.tfstate"
+    key                  = "platform.terraform.tfstate"
   }
 }
+
